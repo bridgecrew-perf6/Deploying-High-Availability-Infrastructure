@@ -7,7 +7,7 @@
 #   }
 # }
 
-resource "aws_instance" "ubuntu" {
+resource "aws_instance" "linux" {
   ami           = var.aws_ami
   count = var.instance_count
   instance_type = "t3.micro"
@@ -16,7 +16,7 @@ resource "aws_instance" "ubuntu" {
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
-    Name = "Ubuntu-Web"
+    Name = "linux-Web"
   }
 }
 
