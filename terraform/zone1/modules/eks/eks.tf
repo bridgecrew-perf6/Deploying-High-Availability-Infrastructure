@@ -57,7 +57,7 @@ resource "aws_eks_cluster" "cluster" {
      aws_iam_role_policy_attachment.node_AmazonEKSWorkerNodePolicy,
      aws_iam_role_policy_attachment.node_AmazonEKS_CNI_Policy,
      aws_iam_role_policy_attachment.node_AmazonEC2ContainerRegistryReadOnly,
-     aws_iam_role_policy_attachment.node_harmony_policy_attachment,
+    #  aws_iam_role_policy_attachment.node_harmony_policy_attachment,
    ]
 
    tags = {
